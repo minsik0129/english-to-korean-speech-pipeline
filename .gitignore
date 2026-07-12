@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# 대용량 생성/다운로드 파일 — 폴더 구조는 유지하되 내용물만 제외
+src/tts/checkpoints/*
+!src/tts/checkpoints/.gitkeep
+
+data/input/*
+!data/input/.gitkeep
+
+data/output/*
+!data/output/.gitkeep

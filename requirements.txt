@@ -1,0 +1,8 @@
+openai-whisper
+transformers
+sentencepiece
+torch
+torchaudio
+soundfile
+pyyaml
+numpy
