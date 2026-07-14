@@ -1,0 +1,4 @@
+model_name: facebook/nllb-200-distilled-600M
+src_lang: eng_Latn
+tgt_lang: kor_Hang
+max_length: 200

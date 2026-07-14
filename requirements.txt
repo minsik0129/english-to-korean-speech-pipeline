@@ -1,8 +1,9 @@
 openai-whisper
-transformers
+transformers==4.46.3
 sentencepiece
 torch
 torchaudio
 soundfile
 pyyaml
 numpy
+sacremoses
