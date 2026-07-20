@@ -7,3 +7,17 @@ soundfile
 pyyaml
 numpy
 sacremoses
+openai-whisper
+transformers==4.46.3
+sentencepiece
+torch
+torchaudio
+soundfile
+pyyaml
+numpy
+sacremoses
+librosa
+scipy
+matplotlib
+jamo
+g2pkk

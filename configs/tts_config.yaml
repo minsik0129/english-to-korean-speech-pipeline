@@ -1,0 +1,2 @@
+checkpoint_step: 350000
+device: cpu
