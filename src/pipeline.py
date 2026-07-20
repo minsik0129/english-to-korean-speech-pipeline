@@ -34,7 +34,7 @@ def run_pipeline(audio_path: str, output_path: str):
 
 
 if __name__ == "__main__":
-    audio_path = "data/input/test_en.mp3"
-    output_path = "data/output/pipeline_result.wav"
+    audio_path = "data/input/test_en.mp3" #어떤 경로의 무슨 파일을 넣을지 확인해야. 입력 파일(영어음성)
+    output_path = "data/output/pipeline_result.wav" #출력되는 아웃풋 파일. 이름 임의로 변경가능
     os.makedirs("data/output", exist_ok=True)
     run_pipeline(audio_path, output_path)
