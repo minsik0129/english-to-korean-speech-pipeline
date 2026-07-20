@@ -120,6 +120,19 @@ def get_vocgan(ckpt_path, n_mel_channels=hp.n_mel_channels, generator_ratio = [4
 
     return model
 
+def vocgan_infer(mel, vocoder, path):
+    model = vocoder
+
+    with torch.no_grad():
+        if len(mel.shape) == 2:
+            mel = mel.unsqueeze(0)
+
+        audio = model.infer(mel).squeeze()
+        audio = hp.max_wav_value * audio[:-(hp.hop_length*10)]
+        audio = audio.clamp(min=-hp.max_wav_value, max=hp.max_wav_value-1)
+        audio = audio.short().cpu().detach().numpy()
+
+        wavfile.write(path, hp.sampling_rate, audio)
 
 def pad_1D(inputs, PAD=0):
 
